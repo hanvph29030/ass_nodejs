@@ -169,7 +169,7 @@ export const createMovie = function (req, res) {
     if (!error) {
         movies.push(data)
         res.send(movies)
-        
+        console.log(1);
     } else {
         res.status(400).send({
             message: error.details[0].message
